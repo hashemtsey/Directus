@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1.4
-FROM directus/directus:10.8.13
+FROM directus/directus:latest
 USER root
 COPY * /etc
 CMD ls -ltr /etc | grep -i certificate 
