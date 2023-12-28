@@ -2,7 +2,7 @@
 FROM directus/directus:10.6.2
 USER root
 COPY * /etc
-cmd ls -ltr /etc | grep -i certificate 
+CMD ls -ltr /etc | grep -i certificate 
 RUN corepack enable \
 && corepack prepare pnpm@8.7.6 --activate \
 && chown node:node /directus
